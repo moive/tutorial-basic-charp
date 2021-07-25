@@ -5,7 +5,7 @@ namespace tutorialVisual
 {
     class Program
     {
-        enum Mounths { January=1, February, March, April, May, June}
+        enum Mounths { January = 1, February, March, April, May, June }
         static void Main(string[] args)
         {
             float julySale = 2000 * Taxes.tax;
@@ -80,7 +80,7 @@ namespace tutorialVisual
             Dictionary<string, int> items = new Dictionary<string, int>();
 
             items.Add("Daniela", 7);
-            items.Add("Gabriela",4);
+            items.Add("Gabriela", 4);
 
             //foreach (KeyValuePair<string,int> item in items)
             //{
@@ -94,11 +94,26 @@ namespace tutorialVisual
 
             Console.WriteLine("--- tuplas ----");
 
-            var person1 = ("Moises","Velasquez", 39);
+            var person1 = ("Moises", "Velasquez", 39);
             Console.WriteLine(person1.Item1);
 
             var person2 = (name: "Samuel", lastName: "Velasquez", age: 37);
             Console.WriteLine(person2.name);
+
+            Console.WriteLine("************ definition inline ************");
+
+            string name = "Veronika";
+            string lastName = "Chancafe";
+
+            void renameUser(out string _name, out string _lastName)
+            {
+                _name = "Daniela";
+                _lastName = "Velasquez";
+            }
+
+            renameUser(out name, out lastName);
+
+            Console.WriteLine(lastName);
         }
     }
 

@@ -91,6 +91,14 @@ namespace tutorialVisual
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("--- tuplas ----");
+
+            var person1 = ("Moises","Velasquez", 39);
+            Console.WriteLine(person1.Item1);
+
+            var person2 = (name: "Samuel", lastName: "Velasquez", age: 37);
+            Console.WriteLine(person2.name);
         }
     }
 

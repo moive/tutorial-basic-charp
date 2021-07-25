@@ -16,7 +16,11 @@ namespace tutorialVisual
 
             DateTime fecha = DateTime.Today;
 
-            Console.WriteLine(fecha);
+            fecha = DateTime.Parse("2021/12/31");
+
+            Console.WriteLine(fecha.ToShortDateString());
+            Console.WriteLine(fecha.ToLongDateString());
+            Console.WriteLine(fecha.AddDays(1));
         }
     }
 }

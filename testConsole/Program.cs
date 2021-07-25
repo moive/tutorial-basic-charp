@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace tutorialVisual
 {
@@ -10,12 +11,15 @@ namespace tutorialVisual
             float julySale = 2000 * Taxes.tax;
             float augustSale = 2500 * Taxes.incomeTax;
 
-            Console.WriteLine((int)Mounths.January);
+            //Console.WriteLine((int)Mounths.January);
+
             //Console.WriteLine(julySale);
 
             //iniciarTutorial();
 
             //cuenta(10);
+
+            listAndDictionary();
         }
 
         static void iniciarTutorial()
@@ -57,6 +61,35 @@ namespace tutorialVisual
             if (number > 0)
             {
                 cuenta(number - 1);
+            }
+        }
+
+        static void listAndDictionary()
+        {
+            List<string> names = new List<string>();
+            names.Add("Moises");
+            names.Add("Samuel");
+            names.Add("Pedro");
+
+            foreach (var item in names)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("--------------");
+
+            Dictionary<string, int> items = new Dictionary<string, int>();
+
+            items.Add("Daniela", 7);
+            items.Add("Gabriela",4);
+
+            //foreach (KeyValuePair<string,int> item in items)
+            //{
+            //    Console.WriteLine(item.Key);
+            //}
+
+            foreach (var item in items.Keys)
+            {
+                Console.WriteLine(item);
             }
         }
     }

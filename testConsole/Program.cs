@@ -24,6 +24,11 @@ namespace tutorialVisual
 
             for (int i = 0; i < 10; i++)
             {
+                if (i == 2)
+                {
+                    Console.WriteLine("number 2");
+                    break;
+                }
                 for (int j = 0; j < 10; j++)
                 {
                     Console.WriteLine(i.ToString() + j.ToString());

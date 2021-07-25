@@ -26,8 +26,8 @@ namespace tutorialVisual
             {
                 if (i == 2)
                 {
-                    Console.WriteLine("number 2");
-                    break;
+                    Console.WriteLine("el número 2 no se pudo imprimir");
+                    continue;
                 }
                 for (int j = 0; j < 10; j++)
                 {

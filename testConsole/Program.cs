@@ -6,6 +6,14 @@ namespace tutorialVisual
     {
         static void Main(string[] args)
         {
+
+            iniciarTutorial();
+
+            cuenta(10);
+        }
+
+        static void iniciarTutorial()
+        {
             byte n1 = 255;
             sbyte n2 = -128;
             int n3 = -9845;
@@ -34,8 +42,6 @@ namespace tutorialVisual
                     Console.WriteLine(i.ToString() + j.ToString());
                 }
             }
-
-            cuenta(10);
         }
 
         static void cuenta(int number)

@@ -4,12 +4,18 @@ namespace tutorialVisual
 {
     class Program
     {
+        enum Mounths { January=1, February, March, April, May, June}
         static void Main(string[] args)
         {
+            float julySale = 2000 * Taxes.tax;
+            float augustSale = 2500 * Taxes.incomeTax;
 
-            iniciarTutorial();
+            Console.WriteLine((int)Mounths.January);
+            //Console.WriteLine(julySale);
 
-            cuenta(10);
+            //iniciarTutorial();
+
+            //cuenta(10);
         }
 
         static void iniciarTutorial()
@@ -53,5 +59,11 @@ namespace tutorialVisual
                 cuenta(number - 1);
             }
         }
+    }
+
+    static class Taxes
+    {
+        public const float tax = 0.18f;
+        public const float incomeTax = 0.1f;
     }
 }

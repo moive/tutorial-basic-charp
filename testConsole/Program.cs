@@ -34,6 +34,18 @@ namespace tutorialVisual
                     Console.WriteLine(i.ToString() + j.ToString());
                 }
             }
+
+            cuenta(10);
+        }
+
+        static void cuenta(int number)
+        {
+            Console.WriteLine(number);
+
+            if (number > 0)
+            {
+                cuenta(number - 1);
+            }
         }
     }
 }

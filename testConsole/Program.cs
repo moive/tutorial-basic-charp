@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace testConsole
+namespace tutorialVisual
 {
     class Program
     {
@@ -14,7 +14,9 @@ namespace testConsole
             double numeroGrande;
             decimal muchoMasGrande;
 
-            Console.WriteLine(n5);
+            DateTime fecha = DateTime.Today;
+
+            Console.WriteLine(fecha);
         }
     }
 }

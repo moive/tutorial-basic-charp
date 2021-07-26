@@ -19,7 +19,9 @@ namespace tutorialVisual
 
             //cuenta(10);
 
-            listAndDictionary();
+            //listAndDictionary();
+
+            runOperations();
         }
 
         static void iniciarTutorial()
@@ -114,6 +116,15 @@ namespace tutorialVisual
             renameUser(out name, out lastName);
 
             Console.WriteLine(lastName);
+        }
+
+        static void runOperations() {
+            Console.WriteLine("Enter number: ");
+            const byte nMounths = 12;
+            byte num = byte.Parse( Console.ReadLine());
+
+            byte plus = (byte)(nMounths + num);
+            Console.WriteLine("The result is: " + plus);
         }
     }
 

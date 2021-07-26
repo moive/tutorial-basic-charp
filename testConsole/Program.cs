@@ -21,7 +21,9 @@ namespace tutorialVisual
 
             //listAndDictionary();
 
-            runOperations();
+            //runOperations();
+
+            runMenuDemo();
         }
 
         static void iniciarTutorial()
@@ -125,6 +127,31 @@ namespace tutorialVisual
 
             byte plus = (byte)(nMounths + num);
             Console.WriteLine("The result is: " + plus);
+        }
+
+        static void runMenuDemo()
+        {
+            Console.WriteLine("Trying my demo");
+            Console.WriteLine("select: 1 Sum, 2 Minus, 3 Multiply");
+            try
+            {
+                int menu = Int32.Parse(Console.ReadLine());
+
+            }
+            catch (FormatException e)
+            {
+                if (e.Message == null)
+                {
+                    throw;
+                }
+                else
+                {
+                    Console.WriteLine("Error: " + e.Message);
+                }
+            }
+            catch (FieldAccessException d) {
+                Console.WriteLine(d);
+            }
         }
     }
 
